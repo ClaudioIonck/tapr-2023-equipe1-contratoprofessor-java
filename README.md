@@ -19,6 +19,8 @@ az login --use-device-code
 az ad signed-in-user show
 ```
 ## Coisas para fazer ao iniciar
+[Portal AZURE](https://portal.azure.com/#home)
+
 ```
 Sempre ao iniciar o projeto - selecionar um arquivo java - ir em java no canto inferior - carregar.
 ```
