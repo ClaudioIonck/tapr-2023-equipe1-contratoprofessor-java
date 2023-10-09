@@ -33,7 +33,9 @@ https://portal.azure.com/#home
 
 ## Extensões do VSCode
 [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+
 [Springboot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)
+
 [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 ## Dependências do projeto (pom.xml)
