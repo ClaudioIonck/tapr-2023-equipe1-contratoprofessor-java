@@ -5,6 +5,8 @@
 
 [DOC COSMOS DB introduction](https://learn.microsoft.com/pt-br/azure/cosmos-db/introduction)
 
+[DOC COSMOS DB roesource model](https://learn.microsoft.com/pt-br/azure/cosmos-db/resource-model)
+
 ```
 az login -u claudio.ionck@unville.br
 ```
