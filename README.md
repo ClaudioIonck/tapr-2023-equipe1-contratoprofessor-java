@@ -5,7 +5,11 @@
 
 ```
 az login -u claudio.ionck@unville.br
+```
+```
 az login --use-device-code
+```
+```
 az ad signed-in-user show
 ```
 ## Coisas para fazer ao iniciar
