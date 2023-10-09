@@ -9,16 +9,9 @@ az login --use-device-code
 az ad signed-in-user show
 ```
 
-# tapr-2023-equipe1-carro-java
-
-## Autenticação no AZURE
-[DOC](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
-
-```
-az login -u walter.s@univille.br
-az login --use-device-code
-az ad signed-in-user show
-```
+´´´
+Sempre ao iniciar o projeto - selecionar um arquivo java - ir em java no canto inferior - carregar.
+´´´
 
 ## Extensões do VSCode
 [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
