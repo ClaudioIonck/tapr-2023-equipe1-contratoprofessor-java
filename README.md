@@ -3,10 +3,12 @@
 ## Autenticação no AZURE
 [DOC CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
 
+## DOCs COMOS DB
 [DOC COSMOS DB introduction](https://learn.microsoft.com/pt-br/azure/cosmos-db/introduction)
 
 [DOC COSMOS DB roesource model](https://learn.microsoft.com/pt-br/azure/cosmos-db/resource-model)
 
+## Minhas colinhas
 ```
 az login -u claudio.ionck@unville.br
 ```
