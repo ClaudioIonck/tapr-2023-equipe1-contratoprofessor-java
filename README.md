@@ -8,11 +8,13 @@ az login -u claudio.ionck@unville.br
 az login --use-device-code
 az ad signed-in-user show
 ```
-
+## Coisas para fazer ao iniciar
 ´´´
 Sempre ao iniciar o projeto - selecionar um arquivo java - ir em java no canto inferior - carregar.
 
 https://orange-space-rotary-phone-rx6pxwrp7xv259x4-8080.app.github.dev/swagger-ui/index.html
+
+https://portal.azure.com/#home
 ´´´
 
 ## Extensões do VSCode
