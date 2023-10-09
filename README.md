@@ -1,9 +1,9 @@
 # tapr-2023-equipe1-professor-java
 
 ## Autenticação no AZURE
-[DOC](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
+[DOC CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
 
-[DOC](https://learn.microsoft.com/pt-br/azure/cosmos-db/introduction)
+[DOC COSMOS DB introduction](https://learn.microsoft.com/pt-br/azure/cosmos-db/introduction)
 
 ```
 az login -u claudio.ionck@unville.br
