@@ -1,13 +1,13 @@
-package br.edu.univille.microservprofessor;
+package br.edu.univille.microservcontratoprofessor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroservprofessorApplication {
+public class MicroservcontratoprofessorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroservprofessorApplication.class, args);
+		SpringApplication.run(MicroservcontratoprofessorApplication.class, args);
 	}
 
 }

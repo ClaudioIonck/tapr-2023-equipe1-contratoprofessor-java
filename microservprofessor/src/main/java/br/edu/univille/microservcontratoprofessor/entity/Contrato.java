@@ -1,4 +1,4 @@
-package br.edu.univille.microservprofessor.entity;
+package br.edu.univille.microservcontratoprofessor.entity;
 
 import org.springframework.data.annotation.Id;
 
@@ -6,9 +6,9 @@ import com.azure.spring.data.cosmos.core.mapping.Container;
 import com.azure.spring.data.cosmos.core.mapping.GeneratedValue;
 import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 
-@Container(containerName = "Professor")
+@Container(containerName = "Contrato")
 
-public class Professor {
+public class Contrato {
     @Id
     @GeneratedValue
     public String id;
