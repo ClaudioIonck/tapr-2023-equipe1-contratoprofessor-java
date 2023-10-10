@@ -1,5 +1,7 @@
 package br.edu.univille.microservcontratoprofessor.entity;
 
+import java.sql.Date;
+
 import org.springframework.data.annotation.Id;
 
 import com.azure.spring.data.cosmos.core.mapping.Container;
@@ -13,8 +15,12 @@ public class Contrato {
     @GeneratedValue
     public String id;
     @PartitionKey
-    public String nome;
-    public String email;
+    
+    public Date dataInicio;
+    public Date dataValidade;
+    public int valor;
+    public String contratente;
+    public String contratado;
 
     public String getId() {
         return id;
@@ -22,16 +28,36 @@ public class Contrato {
     public void setId(String id) {
         this.id = id;
     }
-    public String getNome() {
-        return nome;
+    public Date getDataInicio() {
+        return dataInicio;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setDataInicio(Date dataInicio) {
+        this.dataInicio = dataInicio;
     }
-    public String getEmail() {
-        return email;
+        public Date getDataValidade() {
+        return dataValidade;
     }
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDataValidade(Date dataValidade) {
+        this.dataValidade = dataValidade;
     }
+        public int getValor() {
+        return valor;
+    }
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+        public String getContratente() {
+        return contratente;
+    }
+    public void setContratente(String contratente) {
+        this.contratente = contratente;
+    }
+
+    public String getContratado() {
+        return contratado;
+    }
+    public void setContratado(String contratado) {
+        this.contratado = contratado;
+    }
+
 }
