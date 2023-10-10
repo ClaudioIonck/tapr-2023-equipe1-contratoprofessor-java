@@ -11,6 +11,7 @@ public class Professor {
     @Id
     @GeneratedValue
     public String id;
+    @PartitionKey
     public String nome;
     public String email;
 
