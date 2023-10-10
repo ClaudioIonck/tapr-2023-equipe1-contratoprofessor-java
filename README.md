@@ -82,3 +82,7 @@ https://portal.azure.com/#home
 			<version>2.1.0</version>
 		</dependency>
 ```
+
+```
+az cosmosdb sql role assignment create --account-name cosmosclaudio --resource-group rg-tarp2023-brazilsouth-dev --role-assignment-id 00000000-0000-0000-0000-000000000002 --role-definition-name "Cosmos DB Built-in Data Contributor" --scope "/" --principal-id 70c50066-19b9-40cf-b836-16425767e00d
+```
