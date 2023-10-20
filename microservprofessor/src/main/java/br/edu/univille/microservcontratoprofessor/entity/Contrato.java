@@ -16,6 +16,7 @@ public class Contrato {
     public String id;
     @PartitionKey
     
+    public int numeroContrato;
     public Date dataInicio;
     public Date dataValidade;
     public int valor;
@@ -27,6 +28,12 @@ public class Contrato {
     }
     public void setId(String id) {
         this.id = id;
+    }
+    public int getNumeroContrato() {
+        return numeroContrato;
+    }
+    public void setNumeroContrato(int numeroContrato) {
+        this.numeroContrato = numeroContrato;
     }
     public Date getDataInicio() {
         return dataInicio;
