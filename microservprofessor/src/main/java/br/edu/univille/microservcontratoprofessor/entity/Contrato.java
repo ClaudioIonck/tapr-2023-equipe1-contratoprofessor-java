@@ -15,8 +15,8 @@ public class Contrato {
     @GeneratedValue
     public String id;
     @PartitionKey
-    
     public int numeroContrato;
+    
     public Date dataInicio;
     public Date dataValidade;
     public int valor;
