@@ -9,6 +9,16 @@
             "projectName": "microservprofessor",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservcontratoprofessorApplication<microservprofessor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.edu.univille.microservcontratoprofessor.MicroservcontratoprofessorApplication",
+            "projectName": "microservprofessor",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
