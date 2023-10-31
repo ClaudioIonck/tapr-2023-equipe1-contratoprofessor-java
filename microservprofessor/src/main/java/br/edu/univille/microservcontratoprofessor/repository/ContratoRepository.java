@@ -1,4 +1,4 @@
-package br.edu.univille.microservcontratoprofessor.repositorio;
+package br.edu.univille.microservcontratoprofessor.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

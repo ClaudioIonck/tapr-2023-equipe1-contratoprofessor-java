@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import br.edu.univille.microservcontratoprofessor.entity.Contrato;
-import br.edu.univille.microservcontratoprofessor.repositorio.ContratoRepository;
+import br.edu.univille.microservcontratoprofessor.repository.ContratoRepository;
 import br.edu.univille.microservcontratoprofessor.service.ContratoService;
 
 
