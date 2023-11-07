@@ -23,5 +23,19 @@ public class ContratoServiveImpl implements ContratoService{
 
         return ListaContratos;
     }
-    
+
+    @Override
+    public void save(Contrato contrato) {
+        repository.save(contrato);
+    }
+
+    @Override
+    public void delete(Contrato id) {
+        repository.delete(id);
+    }
+
+    @Override
+    public void update(Contrato contrato) {
+        repository.save(contrato);
+    }
 }
