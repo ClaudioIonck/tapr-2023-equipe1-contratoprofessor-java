@@ -6,7 +6,7 @@ import br.edu.univille.microservcontratoprofessor.entity.Contrato;
 
 public interface ContratoService {
     public List<Contrato> getAll();
-    public void save(Contrato contrato);
+    public Contrato save(Contrato contrato);
     public void delete(Contrato contrato);
-    public void update(Contrato contrato);
+    public Contrato update(Contrato contrato);
 }

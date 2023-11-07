@@ -25,8 +25,8 @@ public class ContratoServiveImpl implements ContratoService{
     }
 
     @Override
-    public void save(Contrato contrato) {
-        repository.save(contrato);
+    public Contrato save(Contrato contrato) {
+        return repository.save(contrato);
     }
 
     @Override
@@ -35,7 +35,7 @@ public class ContratoServiveImpl implements ContratoService{
     }
 
     @Override
-    public void update(Contrato contrato) {
-        repository.save(contrato);
+    public Contrato update(Contrato contrato) {    
+        return repository.save(contrato);
     }
 }
