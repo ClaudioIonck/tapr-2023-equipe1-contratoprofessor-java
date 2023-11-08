@@ -25,17 +25,42 @@ public class ContratoServiveImpl implements ContratoService{
     }
 
     @Override
-    public Contrato save(Contrato contrato) {
+    public Contrato getById(String id) {
+        var contrato = repository.findById(id);
+        if(contrato.isPresent()){
+            return contrato.get();
+        }
+        return null;
+    }
+
+    @Override
+    public Contrato saveNew(Contrato contrato) {
+        contrato.setId(null);
         return repository.save(contrato);
     }
 
     @Override
-    public void delete(Contrato id) {
-        repository.delete(id);
+    public Contrato update(String id, Contrato contrato) {
+        var buscaContratoAntigo = repository.findById(id);
+        if (buscaContratoAntigo.isPresent()){
+            var contratoAntigo = buscaContratoAntigo.get();
+
+            // Atualiza cada atributo do contrato antigo com os valores do contrato novo
+            contratoAntigo.setNumeroContrato(contrato.getNumeroContrato());
+
+            return repository.save(contratoAntigo);
+        }
+        return null;
     }
 
     @Override
-    public Contrato update(Contrato contrato) {    
-        return repository.save(contrato);
+    public Contrato delete(String id) {
+        var buscarContrato = repository.findById(id);
+        if (buscarContrato.isPresent()){
+            var contrato = buscarContrato.get();
+            repository.delete(contrato);
+            return contrato;
+        }
+        return null;
     }
 }
