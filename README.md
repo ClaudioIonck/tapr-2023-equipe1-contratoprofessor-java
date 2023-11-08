@@ -39,6 +39,10 @@ https://orange-space-rotary-phone-rx6pxwrp7xv259x4-8080.app.github.dev/swagger-u
 https://portal.azure.com/#home
 ```
 
+```
+https://orange-space-rotary-phone-rx6pxwrp7xv259x4-8080.app.github.dev/swagger-ui/index.html
+```
+
 ## Extensões do VSCode
 [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
