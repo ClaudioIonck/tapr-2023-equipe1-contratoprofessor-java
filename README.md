@@ -22,6 +22,8 @@ az ad signed-in-user show
 https://portal.azure.com/#@univillebr.onmicrosoft.com/resource/subscriptions/1c43c274-f7dd-4647-a446-e270787fb1bc/resourceGroups/rg-tarp2023-brazilsouth-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmosclaudio/dataExplorer
 ```
 ```
+http://localhost:8080/swagger-ui.html
+```
 ## Coisas para fazer ao iniciar
 [Portal AZURE](https://portal.azure.com/#home)
 
@@ -35,6 +37,10 @@ https://orange-space-rotary-phone-rx6pxwrp7xv259x4-8080.app.github.dev/swagger-u
 
 ```
 https://portal.azure.com/#home
+```
+
+```
+https://orange-space-rotary-phone-rx6pxwrp7xv259x4-8080.app.github.dev/swagger-ui/index.html
 ```
 
 ## Extensões do VSCode
