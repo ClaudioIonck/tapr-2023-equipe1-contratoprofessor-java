@@ -19,7 +19,7 @@ Content-Type: application/json
 }
 
 ### Atualizar a contrato
-PUT http://localhost:8080/api/v1/grades/1c43c274-f7dd-4647-a446-e270787fb1bc
+PUT http://localhost:8080/api/v1/contrato/1c43c274-f7dd-4647-a446-e270787fb1bc
 
 {
     "id": "5",
