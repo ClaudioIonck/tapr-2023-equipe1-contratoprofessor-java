@@ -20,7 +20,7 @@ public class Contrato {
     public Date dataInicio;
     public Date dataValidade;
     public int valor;
-    public String contratente;
+    public String contratante;
     public String contratado;
 
     public String getId() {
@@ -53,11 +53,11 @@ public class Contrato {
     public void setValor(int valor) {
         this.valor = valor;
     }
-        public String getContratente() {
-        return contratente;
+        public String getContratante() {
+        return contratante;
     }
-    public void setContratente(String contratente) {
-        this.contratente = contratente;
+    public void setContratante(String contratante) {
+        this.contratante = contratante;
     }
 
     public String getContratado() {

@@ -3,7 +3,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RestController;
 import br.edu.univille.microservcontratoprofessor.entity.Contrato;
 import br.edu.univille.microservcontratoprofessor.service.ContratoService;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +35,7 @@ public class ContratoAPIController {
         if(contrato == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    return new ResponseEntity<Contrato>(contrato, HttpStatus.OK);
     }
 
     @PostMapping
