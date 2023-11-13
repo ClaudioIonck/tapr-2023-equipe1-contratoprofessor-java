@@ -9,12 +9,12 @@ POST http://localhost:8080/api/v1/contratos
 Content-Type: application/json
 
 {
-    "numeroContrato": "5",
+    "numeroContrato": "10",
     "dataInicio": "2022-01-01",
     "dataValidade": "2024-01-01",
-    "valor": 1000,
+    "valor": 9000,
     "contratente": "Univille",
-    "contratado": "TESTE CRUDE ADD"
+    "contratado": "Luizinho"
 }
 
 ### Atualizar a contrato

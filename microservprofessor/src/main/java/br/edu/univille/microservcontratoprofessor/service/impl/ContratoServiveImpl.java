@@ -7,7 +7,6 @@ import br.edu.univille.microservcontratoprofessor.entity.Contrato;
 import br.edu.univille.microservcontratoprofessor.repository.ContratoRepository;
 import br.edu.univille.microservcontratoprofessor.service.ContratoService;
 
-
 @Service
 public class ContratoServiveImpl implements ContratoService{
 
@@ -16,16 +15,16 @@ public class ContratoServiveImpl implements ContratoService{
 
     @Override
     public List<Contrato> getAll() {
+
         var interador = repository.findAll();
         List<Contrato> ListaContratos = new ArrayList<>();
-
         interador.forEach(ListaContratos::add);
-
         return ListaContratos;
     }
 
     @Override
     public Contrato getById(String id) {
+
         var contrato = repository.findById(id);
         if(contrato.isPresent()){
             return contrato.get();
@@ -47,7 +46,7 @@ public class ContratoServiveImpl implements ContratoService{
 
             // Atualiza cada atributo do contrato antigo com os valores do contrato novo
             contratoAntigo.setNumeroContrato(contrato.getNumeroContrato());
-
+            // !!!!!!!!!!!adicionar o restante!!!!!!!!!!!!
             return repository.save(contratoAntigo);
         }
         return null;

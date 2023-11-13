@@ -51,14 +51,11 @@ public class ContratoAPIController {
     public ResponseEntity<Contrato> atualizarContrato(@PathVariable("id") String id, @RequestBody Contrato contrato){
         if(contrato == null || id == "" || id == null){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
+        }    
+
         contrato = service.update(id, contrato);
-        if(contrato == null){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
         return new ResponseEntity<Contrato>(contrato, HttpStatus.OK);
     }
-    
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Contrato> removerContrato(@PathVariable("id") String id){
