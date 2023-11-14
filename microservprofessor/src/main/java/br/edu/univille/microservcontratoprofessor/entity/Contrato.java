@@ -9,11 +9,10 @@ import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 
 public class Contrato {
     @Id
+    @PartitionKey
     @GeneratedValue
     public String id;
-    @PartitionKey
     public int numeroContrato;
-    
     public Date dataInicio;
     public Date dataValidade;
     public int valor;
