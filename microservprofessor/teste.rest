@@ -2,7 +2,7 @@
 GET http://localhost:8080/api/v1/contratos
 
 ### Buscar contrato pelo ID
-GET http://localhost:8080/api/v1/contratos/1
+GET http://localhost:8080/api/v1/contratos/df0565d0-af4f-4f5e-813a-0b483d242de7
 
 ### Inserir uma novo contrato
 POST http://localhost:8080/api/v1/contratos
@@ -18,11 +18,12 @@ Content-Type: application/json
 }
 
 ### Atualizar a contrato
-PUT http://localhost:8080/api/v1/contratos/f0ae38b7-8a8c-48e7-bc23-6a0c82a2f4c3
+### !!! FECHAR O POSTMAN E ABRIR NOVAMENTE PARA ATUALIZAR O HEADER !!!
+PUT http://localhost:8080/api/v1/contratos/df0565d0-af4f-4f5e-813a-0b483d242de7
 Content-Type: application/json
 
 {
-    "numeroContrato": "6",
+    "numeroContrato": "10",
     "dataInicio": "2022-01-01",
     "dataValidade": "2024-01-01",
     "valor": 1000,
@@ -31,5 +32,6 @@ Content-Type: application/json
 }
 
 ### Remover a contrato
-DELETE  http://localhost:8080/api/v1/contratos/f0ae38b7-8a8c-48e7-bc23-6a0c82a2f4c3
+### !!! FECHAR O POSTMAN E ABRIR NOVAMENTE PARA ATUALIZAR O HEADER !!!
+DELETE  http://localhost:8080/api/v1/contratos/df0565d0-af4f-4f5e-813a-0b483d242de7
 Content-Type: application/json
