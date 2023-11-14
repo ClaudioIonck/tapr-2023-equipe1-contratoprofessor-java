@@ -8,7 +8,7 @@ import br.edu.univille.microservcontratoprofessor.repository.ContratoRepository;
 import br.edu.univille.microservcontratoprofessor.service.ContratoService;
 
 @Service
-public class ContratoServiveImpl implements ContratoService{
+public class ContratoServiceImpl implements ContratoService{
 
     @Autowired
     private ContratoRepository repository;
