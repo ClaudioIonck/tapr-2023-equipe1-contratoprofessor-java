@@ -18,6 +18,17 @@
             "mainClass": "br.edu.univille.microservcontratoprofessor.MicroservcontratoprofessorApplication",
             "projectName": "microservprofessor",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=42771 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservprofessor"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservprofessorApplication<microservprofessor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.edu.univille.microservcontratoprofessor.MicroservprofessorApplication",
+            "projectName": "microservprofessor",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]
