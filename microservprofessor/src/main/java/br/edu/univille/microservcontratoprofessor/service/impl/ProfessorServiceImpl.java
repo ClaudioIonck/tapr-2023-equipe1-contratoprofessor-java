@@ -69,4 +69,9 @@ public class ProfessorServiceImpl implements ProfessorService{
         }
         return null;
     }
+
+    @Override
+    public Professor update(Professor professor) {
+        return repository.save(professor);
+    }
 }
