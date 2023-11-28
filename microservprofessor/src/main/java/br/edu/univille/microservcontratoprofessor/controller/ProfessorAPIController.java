@@ -1,6 +1,11 @@
 package br.edu.univille.microservcontratoprofessor.controller;
 import java.util.List;
 import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.http.MediaType;
+import io.dapr.Topic;
+import io.dapr.client.domain.CloudEvent;
+
 import br.edu.univille.microservcontratoprofessor.entity.Professor;
 import br.edu.univille.microservcontratoprofessor.service.ProfessorService;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -75,4 +80,13 @@ public class ProfessorAPIController {
             (professor, HttpStatus.OK);
     }
     
+    @Topic(name = "${app.component.topic.professor}", pubsubName = "${app.component.service}")
+    @PostMapping(path = "/event", consumes = MediaType.ALL_VALUE)
+    public ResponseEntity<Professor> atualizarProfessor(@RequestBody(required = false) CloudEvent<Professor> cloudEvent){
+        var professor = service.update(cloudEvent.getData());
+        System.out.println("EVENT" + professor.getNome());
+        return 
+            new ResponseEntity<Professor>
+            (professor, HttpStatus.OK);
+    }   
 }
