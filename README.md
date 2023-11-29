@@ -24,6 +24,9 @@ https://portal.azure.com/#@univillebr.onmicrosoft.com/resource/subscriptions/1c4
 ```
 http://localhost:8080/swagger-ui.html
 ```
+```
+ mvn clean install -DskipTests
+```
 ## Coisas para fazer ao iniciar
 [Portal AZURE](https://portal.azure.com/#home)
 

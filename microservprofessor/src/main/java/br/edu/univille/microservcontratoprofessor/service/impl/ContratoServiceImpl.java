@@ -2,16 +2,25 @@ package br.edu.univille.microservcontratoprofessor.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import br.edu.univille.microservcontratoprofessor.entity.Contrato;
 import br.edu.univille.microservcontratoprofessor.repository.ContratoRepository;
 import br.edu.univille.microservcontratoprofessor.service.ContratoService;
+import io.dapr.client.DaprClient;
+import io.dapr.client.DaprClientBuilder;
 
 @Service
-public class ContratoServiveImpl implements ContratoService{
+public class ContratoServiceImpl implements ContratoService{
 
     @Autowired
     private ContratoRepository repository;
+
+    private DaprClient client = new DaprClientBuilder().build();
+    @Value("${app.component.topic.contrato}")
+    private String TOPIC_NAME;
+    @Value("${app.component.service}")
+	private String PUBSUB_NAME;
 
     @Override
     public List<Contrato> getAll() {
@@ -35,7 +44,9 @@ public class ContratoServiveImpl implements ContratoService{
     @Override
     public Contrato saveNew(Contrato contrato) {
         contrato.setId(null);
-        return repository.save(contrato);
+        contrato = repository.save(contrato);
+        publicarAtualizacao(contrato);
+        return contrato;
     }
 
     @Override
@@ -46,8 +57,9 @@ public class ContratoServiveImpl implements ContratoService{
 
             // Atualiza cada atributo do contrato antigo com os valores do contrato novo
             contratoAntigo.setNumeroContrato(contrato.getNumeroContrato());
-
-            return repository.save(contratoAntigo);
+            contratoAntigo = repository.save(contratoAntigo);
+            publicarAtualizacao(contratoAntigo);
+            return contratoAntigo;
         }
         return null;
     }
@@ -61,5 +73,13 @@ public class ContratoServiveImpl implements ContratoService{
             return contrato;
         }
         return null;
+    }
+
+    //método privado para publicar a atualização
+    private void publicarAtualizacao(Contrato contrato){
+        client.publishEvent(
+					PUBSUB_NAME,
+					TOPIC_NAME,
+					contrato).block();
     }
 }

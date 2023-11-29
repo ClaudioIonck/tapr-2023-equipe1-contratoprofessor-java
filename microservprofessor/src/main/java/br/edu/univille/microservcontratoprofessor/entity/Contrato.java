@@ -18,6 +18,8 @@ public class Contrato {
     public int valor;
     public String contratante;
     public String contratado;
+    
+    public String professorid;
 
     public String getId() {
         return id;
@@ -61,6 +63,12 @@ public class Contrato {
     }
     public void setContratado(String contratado) {
         this.contratado = contratado;
+    }
+    public String getProfessorid() {
+        return professorid;
+    }
+    public void setProfessorid(String professorid) {
+        this.professorid = professorid;
     }
 
 }
